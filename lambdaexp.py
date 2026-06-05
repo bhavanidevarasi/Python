@@ -1,0 +1,4 @@
+a = [1, 2, 3]
+b = [4, 5, 6]
+res = tuple(map(lambda x,y: x + y, a,b))
+print(res)
