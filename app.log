@@ -1,0 +1,20 @@
+Im debugging
+FYIII
+DEBUG:root:division by zero
+ERROR:root:division by zero
+ERROR:root:Miss Calculation
+Traceback (most recent call last):
+  File "C:\Users\devar\OneDrive\Desktop\python_practice\errorlogging.py", line 11, in <module>
+    reyl = 10/n
+           ~~^~
+ZeroDivisionError: division by zero
+DEBUG:root:division by zero
+ERROR:root:division by zero
+ERROR:root:Miss Calculation
+Traceback (most recent call last):
+  File "C:\Users\devar\OneDrive\Desktop\python_practice\errorlogging.py", line 11, in <module>
+    reyl = 10/n
+           ~~^~
+ZeroDivisionError: division by zero
+DEBUG:root:division by zero
+ERROR:root:division by zero

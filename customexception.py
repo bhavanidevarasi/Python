@@ -43,3 +43,36 @@ try:
         raise salaryError("the min salary should be greater than 0")
 except salaryError as e:
     print(e)
+
+#exceptions with meethod
+class addition(Exception):
+    def add(a,b):
+        return a//b
+a = 2
+try:
+    b = int(input())
+    if b ==0:
+        raise addition("Can't divide with zero!!")
+    else:
+        print(addition.add(a,b))
+except addition as e:
+    print(e)
+
+class UsernameError(Exception):
+    def help(self):
+        return "user name must be admin"
+class PasswordError(Exception):
+    def help(self):
+        return "password must be 123434"
+try:
+    username = "user"
+    if username != "admin":
+        raise UsernameError()
+except UsernameError as e:
+    print(e.help())
+try:
+    password = "user"
+    if password != "123434":
+        raise PasswordError()
+except PasswordError as e:
+    print(e.help())
