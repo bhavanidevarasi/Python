@@ -52,3 +52,14 @@ p = Parttime()
 p.salary(2,300)
 f = Fulltime()
 f.salary()
+
+class Animal:
+    def sound(self):
+        print("it sounds")
+class Cat():
+    def sound(self):
+        print("it sounds meow")
+ca = Cat()
+ca.sound()
+an = Animal()
+an.sound()
