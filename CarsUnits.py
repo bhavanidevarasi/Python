@@ -111,7 +111,7 @@ class Student:
         self.name=name
         self.roll_no=roll_no
     def __str__(self):
-        return f"Name: {self.name}, Roll No: {self.roll_no}"
+        return f"Name: {self.name}, Roll No: {self.roll_no}, school name: {self.school_name}"
 st = Student('bhavs',27)
 print(Student.school_name)
 print(st)

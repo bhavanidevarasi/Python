@@ -100,7 +100,7 @@ class Bike(Vehicle):
 bike = Bike()
 bike.vehi()
 bike.sounds()
-'''
+
 class Person:
     def __init__(self,name,age):
         self.name=name
@@ -115,3 +115,13 @@ class Student(Person):
         print("Roll No :",self.roll_no)
 stu = Student('bhavs',21,27)
 stu.display()
+'''
+class Some:
+    def __init__(self,value):
+        self.value=value
+    def __add__(self,other):
+        return self.value + other.value
+    #this automatically creates a addition method so when we call the + this will return
+s1 =Some(20)
+s2 =Some(30)
+print(s1.value + s2.value)

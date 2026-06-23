@@ -1,4 +1,5 @@
-
+from itertools import chain
+'''
 # list creating using []
 import itertools
 a = [1,2,3]
@@ -53,3 +54,91 @@ print(lis)
 #using slicing
 print(lis[:4])
 print(lis[0::2])
+
+length = int(input())
+lis = [] 
+for i in range(length):
+    lis.append(int(input()))
+print(lis)
+print(len(lis))
+sum = 0
+for i in lis:
+    sum += i
+print(sum)
+total =0
+for i in range(len(lis)):
+    total += lis[i]
+print(total)
+lis.sort()
+print(lis[-1])
+print(lis[0])
+evecount =0
+oddcount =0
+#res =[val for val in list count += 1 if val % 2 ==0]
+for i in lis:
+    if i % 2 ==0:
+        evecount += 1
+    else:
+        oddcount +=1
+print('The even count is :', evecount)
+print('The odd count is :', oddcount)
+ele = int(input("Enter the element to be found :"))
+for i in lis:
+    if ele == i:
+        print("found")
+print(lis[::-1])
+li = lis
+print(li)
+li1 = []
+for i in lis:
+    li1.append(i)
+print(li1)
+avg = total / len(lis)
+print(avg)
+print(set(lis))
+a =[1,2,3]
+b = [1,4,5]
+c= list(chain(a,b))
+print(c)
+cars = ['Bently','porsche','Ferrari']
+print(max(cars,key=len))
+longest = cars[0]
+for i in cars:
+    if len(i) > len(longest):
+        longest = i
+print(longest)
+'''
+#removing all occurences of elements in list
+list = [10,20,40,4]
+largest =list[0]
+second_largest= list[0]
+for i in list:
+    if i > largest:
+        largest = i
+for i in list:
+    if i > largest and i > second_largest:
+        second_largest =i
+print(largest)
+print(second_largest)
+smallest = list[0]
+for i in list:
+    if i < smallest:
+        smallest =i
+print(smallest)
+list.sort()
+print(list[0], "smallest")
+print(list[-1], 'largest')
+n = int(input("enter the nth number : "))
+list.sort()
+print(list[n-1])
+vowels = ['a','e','i','o','u']
+str = 'bhavani'
+count = 0
+for ch in str:
+    if ch in vowels:
+        count += 1
+print(count)
+fact =1
+for i in range(1,6):
+    fact *= i
+print(fact)

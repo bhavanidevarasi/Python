@@ -21,4 +21,3 @@ for key in a:
 print("printing values only")
 for val in a.values():
     print(val)
-
